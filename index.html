@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta name="robots" content="noindex" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=7, initial-scale=1.0" />
+    <title>Passionssite</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="flex_between">
+      <img src="assets/passionlogo.svg" alt="Passion Talk logo" class="logo" />
+      <div class="circle">
+        <p class="navn">EMILIES PASSION</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Forside</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero section -->
+    <div class="hero">
+      <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+      <dotlottie-player src="https://lottie.host/a0b2979b-2ab6-40d8-9fbf-314cdfb88753/zOEjxVUde0.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+    </div>
+    <main>
+      <div class="grid_1-1">
+        <div>
+          <h1>Passion for Smykkedesign</h1>
+          <h2>Et Personligt Udtryk</h2>
+          <div class="text_felt">
+            <p>Emilie Fabricius, grundlægger af smykkebrandet Ricius, ser design som en balance mellem kunst og funktionalitet. Hendes mål er at skabe smykker, der både er moderne, tidsløse og som samtidig føles unikke for den, der bærer dem.</p>
+            <p>Hendes interesse for design begyndte tidligt. Som yngre startede hun med tøj og små detaljer for at skabe looks, der gjorde hendes stil mere spændende og personlig. Det var her, hendes kærlighed til kreativitet og æstetik blev grundlagt.</p>
+            <p>Selvom idéerne kommer naturligt, er det ikke altid lige let at føre dem ud i livet. Emilie beskriver processen som fyldt med udfordringer, men også som den mest givende del af arbejdet. “Det er spændende at tage noget fra tanke til færdigt produkt, selvom det kræver meget.”</p>
+            <p>Ricius er dog mere end smykker. Emilie drømmer om at bygge et fællesskab, hvor mennesker kan finde inspiration og genkende sig selv i brandets æstetik. Sociale medier, som Instagram, spiller en stor rolle i at skabe denne visuelle og følelsesmæssige forbindelse.</p>
+          </div>
+        </div>
+        <div class="billedetext-container">
+          <img src="billeder/blomster.webp" alt="Blomster" class="billede1" />
+          <p class="billedetext">DESIGNS MED PERSONLIGHED</p>
+        </div>
+      </div>
+      <h2>Billeder</h2>
+      <div class="grid_1-1_1-1-1">
+        <img src="billeder/ansigt.webp" alt="Intaviewperson" class="billede2" />
+        <img src="billeder/ricius.webp" alt="Ricius pose med smykker over" class="billede3" />
+        <img src="billeder/blad.webp" alt="scrapbook/blad med inspirationer i" class="billede4" />
+        <img src="billeder/ring.webp" alt="Ricius ring" class="billede5" />
+      </div>
+      <h2>Intaview</h2>
+      <div class="grid2_1-1">
+        <!-- Video (m. <video>-tag) -->
+        <video src="assets/passionsvideo.mp4" controls poster="billeder/passionsvideo_billede.webp"></video>
+        <!-- Video (YouTube-embed) -->
+        <iframe src="https://www.youtube.com/embed/AEo2z2dqhhE?si=yaoK-VQmDhtCSHW7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <script src="script.js"></script>
+    </main>
+    <footer>
+      <p class="footer_text">lavet af Nicolai Schou</p>
+    </footer>
+  </body>
+</html>

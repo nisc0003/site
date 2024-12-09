@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img,
+video,
+iframe {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+body {
+  /* background-color: rgba(227, 212, 199, 1); */
+  background-image: url(assets/baggrund_textur.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 4vw;
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+  transition: transform 0.3s ease;
+}
+
+iframe:hover {
+  transform: scale(1.02);
+}
+
+video {
+  aspect-ratio: 16 / 9;
+  transition: transform 0.3s ease;
+}
+
+video:hover {
+  transform: scale(1.02);
+}
+
+/* text styling */
+
+h1 {
+  font-family: amiri;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 100%;
+  color: rgba(35, 31, 32, 1);
+}
+
+h2 {
+  font-family: amiri;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 100%;
+  padding-top: 10px;
+  border-bottom: solid rgba(146, 128, 122, 1);
+  border-width: 2px;
+  color: rgba(35, 31, 32, 0.95);
+}
+
+p {
+  font-family: nunito sans;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(35, 31, 32, 1);
+  margin-bottom: 10px;
+}
+
+.text_felt {
+  background-color: rgba(255, 255, 255, 0.445);
+}
+
+a {
+  font-family: nunito sans;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.billedelogo {
+  height: 40px;
+  width: auto;
+  display: inline;
+}
+
+/* billedetext */
+
+.billedetext-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.billedetext {
+  position: absolute;
+  font-family: amiri;
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+  filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.847));
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* mediaquary */
+@media (min-width: 800px) {
+  main {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+
+/* Header starter her */
+
+.logo {
+  width: 70px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navn {
+  font-family: amiri;
+  font-size: 40px;
+  font-weight: 500;
+  place-self: center;
+  color: black;
+  margin: 0px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(237, 239, 241);
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+  color: #000000;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s;
+}
+
+nav ul a:hover {
+  color: rgba(136, 159, 178, 1);
+}
+
+/* Burger Menu */
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.burger .line {
+  width: 100%;
+  height: 4px;
+  border-radius: 50px;
+  background-color: #000000;
+  transition: 0.3s;
+}
+
+@media (max-width: 800px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(195, 206, 214);
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+/* header slutter her */
+
+.hero {
+  margin-top: 90.8px;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.footer_text {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  margin-bottom: 0px;
+  display: flex;
+  place-content: center;
+  background-color: rgb(237, 239, 241);
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.76);
+}
